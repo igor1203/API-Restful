@@ -1,6 +1,4 @@
 const knex = require("../database/knex");
-const { response } = require("express");
-
 
 class NotesController {
   async create(request, response){
@@ -32,7 +30,7 @@ class NotesController {
 
     await knex("tags").insert(tagsInsert);
     
-    response.json();
+    return response.json();
   }
 
   async show(request, response){
