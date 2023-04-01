@@ -1,4 +1,4 @@
-const { Router, request } = require("express");
+const { Router } = require("express");
 const multer = require("multer")
 const uploadConfig = require("../configs/upload")
 
